@@ -1,0 +1,42 @@
+/* ## Tables
+--------------------------------------------- */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 40px;
+  table-layout: fixed;
+  width: 100%;
+  word-break: break-all;
+
+  @media only screen and (min-width: 480px) {
+      table-layout: auto;
+      word-break: normal;
+    }
+}
+
+tbody {
+  border-bottom: 1px solid #eee;
+}
+
+td,
+th {
+  text-align: left;
+  vertical-align: top;
+}
+
+td {
+  border-top: 1px solid #eee;
+  padding: 10px;
+}
+
+th {
+  font-weight: 600;
+  padding: 0 10px 10px;
+}
+
+td:first-child,
+th:first-child {
+  padding-left: 0;
+}
+

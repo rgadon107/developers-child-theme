@@ -1,0 +1,43 @@
+.wp-custom-logo {
+
+  .title-area {
+    max-width: $title-area--width;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 100%;
+
+    @media only screen and (max-width: 1023px) {
+      float: none;
+    }
+
+    & img {
+      width: auto;
+    }
+  }
+
+  .site-title {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    overflow: hidden;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
+  }
+}
+
+  .site-title > a {
+    background-position: center !important;
+    background-size: contain !important;
+    float: left;
+    min-height: $site-title--min-height;
+    width: 100%;
+  }
+
+  .site-description,
+  .site-title {
+    display: block;
+    text-indent: -9999px;
+  }
+}
+

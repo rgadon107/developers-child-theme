@@ -1,0 +1,20 @@
+//
+// Site Header Base Style
+//==============================
+
+.site-header {
+  background-color: $site-header--background-color;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  padding: 0 30px;
+
+  @media only screen and (min-width: 960px) {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+  }
+
+  .admin-bar & {
+    top: 32px;
+  }
+}

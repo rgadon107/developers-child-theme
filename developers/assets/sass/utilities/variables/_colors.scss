@@ -1,0 +1,131 @@
+// Base Colors
+//===================
+$white: #fff;
+$white--light-gray: #f5f5f5;
+$black: #000;
+$blue: #0073e5;
+$red: #c3251d;
+$gray--lightest: #ccc;
+$gray--lighter: #eee;
+$gray--light: #ddd;
+$gray--medium: #777;
+$gray: #333;
+
+//
+// Color Configuration
+//===========================
+
+$link--color: $red;
+$link--hover-color: $gray;
+
+// Elements
+$base__color: $gray;
+$body--background-color: $gray--lighter;
+
+// Form Elements
+$input--background-color: $white;
+$input--border-color: $gray--light;
+$input--color: $gray;
+$input--focus-border-color: $gray--light;
+$button--background-color: $gray;
+$button--color: $white;
+$button--hover-background-color: $red;
+$button--hover-color: $white;
+$button--disabled-background-color: $gray--lighter;
+$button--disable-color: $gray--medium;
+
+//
+// Header
+//======================
+$site-header--background-color: $white;
+$site-title--link-color: $gray;
+
+//
+// Navigation
+//============================
+$nav--link-color: $gray;
+$nav--hover-color: $blue;
+$nav-menu-highlight--background-color: $gray;
+$nav-menu-highlight--link-color: $white;
+$nav-menu-highlight--link-focus-color: $blue;
+
+$submenu--border-color: $gray--lighter;
+$submenu--link-background-color: $white;
+$submenu--link-border-color: $gray--lighter;
+
+$primary-nav--link-color: $nav--link-color;
+
+$secondary-nav--link-color: $nav--link-color;
+
+$responsive-nav--toggle-color: $gray;
+$responsive-nav--link-color: $blue;
+
+$js-nav--background-color: $white;
+$js-nav--hover-color: $black;
+$js-nav--focus-color: $red;
+
+$nav-toggle--background-color: $white;
+$nav-toggle--color: $gray;
+
+$archive-pagination--background-color: $white--light-gray;
+$archive-pagination--color: $gray;
+$archive-pagination--hover-background-color: $gray;
+$archive-pagination--hover-color: $white;
+
+//
+// Footer
+//============================
+$site-footer--background-color: $white;
+$site-footer--border-color: $gray--lighter;
+$footer-widgets--border-color: $gray--lighter;
+
+//
+// Entry Content
+//===================
+$entry-footer__meta--border-color: $gray--lighter;
+$entry-title--link-color: $gray;
+$entry-title--hover-color: $blue;
+$entry-content__code--background-color: $white--light-gray;
+$entry-content-sticky--background-color: $white--light-gray;
+
+
+//
+// Comments
+//===================
+//$comment--background-color: $white;
+
+//
+// Widgets
+//===================
+$widget-title--link-color: $gray;
+$featured-entry-content--border-color: $gray;
+
+//
+// Skip Links
+//===================
+$skip-link--color: $gray;
+$skip-link--outline-color: $gray--lightest;
+
+//
+// Plugins
+//===================
+$enews--background-color: $white;
+$enews--color: $white;
+$enews__input--border-color: $gray;
+$enews__submit-button--background-color: $red;
+$enews__submit-button--color: $white;
+$enews__submit-button__BackgroundHoverColor: $white;
+$enews__submit-button--hover-color: $red;
+$simple-faq__question--color: $gray;
+$simple-faq__question--border-color: $white;
+$simple-faq__question--link-color: $blue;
+$wp-forms__submit-button--background-color: $gray;
+$wp-forms__submit-button--color: $white;
+$wp-forms__submit-button--hover-color: $white;
+$wp-forms__submit-button--hover-background-color: $blue;
+
+// General Components
+//$breadcrumbs--background-color: $white;
+$breadcrumbs--border-color: $gray--lighter;
+//$author-box--background-color: $white--light-gray;
+$after-entry--background-color: $white;

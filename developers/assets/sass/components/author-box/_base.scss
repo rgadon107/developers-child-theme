@@ -1,0 +1,24 @@
+/* Author Box -- Base Styles
+ --------------------------------------------------- */
+
+.author-box {
+  //background-color: $author-box--background-color;
+  //@include rem( font-size, $author-box--font-size );
+  margin-bottom: 40px;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  @media only screen and (min-width: 960px) {
+    background-color: $author-box--background-color;
+    padding: 30px;
+    margin-bottom: 60px;
+  }
+}
+
+.author-box-title {
+  @include rem( font-size, $author-box__Title--font-size);
+  font-weight: 600;
+  margin-bottom: 10px;
+}

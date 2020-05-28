@@ -1,0 +1,22 @@
+
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-size: $html--font-size; /* 10px browser default */
+}
+
+body {
+  background-color: $body--background-color;
+  color: $base__color;
+  font-family: $base--font-family;
+  @include rem( font-size, $base--font-size );
+  font-weight: 400;
+  line-height: $base--line-height;
+  margin: 0;
+  overflow-x: hidden;
+
+   @include media( $breakpoint__screen-size--small ) {
+    font-size: $base--font-size--small-screen;
+  }
+}
+

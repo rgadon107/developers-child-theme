@@ -1,0 +1,29 @@
+/* ### Content Layout
+----------------------------------------------- */
+
+.content {
+  @media only screen and (min-width: 960px) {
+    float: left;
+    width: $content--width-larger-screen;
+  }
+
+  .sticky {
+    background-color: $entry-content-sticky--background-color;
+    padding: 30px;
+  }
+
+  .sidebar-content & {
+    @media only screen and (min-width: 960px) {
+      float: right;
+    }
+  }
+
+  .full-width-content &,
+  .landing-page & {
+    @media only screen and (min-width: 960px) {
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

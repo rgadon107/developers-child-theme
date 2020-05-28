@@ -1,0 +1,19 @@
+.after-entry {
+  background-color: $after-entry--background-color;
+  @include rem( font-size, $after-entry--font-size );
+  margin-bottom: 40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  padding: 20px 30px;
+
+  @media only screen and (min-width: 960px) {
+    margin-bottom: 60px;
+    padding: 40px 60px;
+  }
+
+
+
+  & .widget:last-of-type {
+    margin-bottom: 0;
+  }
+}
+

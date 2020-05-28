@@ -1,0 +1,17 @@
+//
+// Comments base stylings
+//========================
+
+.comment-respond,
+.entry-comments,
+.entry-pings {
+  margin-bottom: 40px;
+
+  @media only screen and (min-width: 960px) {
+    margin-bottom: 60px;
+  }
+}
+
+.entry-pings .reply {
+  display: none;
+}

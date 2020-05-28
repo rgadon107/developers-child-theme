@@ -1,0 +1,101 @@
+//
+// Responsive Menu
+// =======================================
+
+.menu .menu-item {
+  &:focus {
+    position: static;
+  }
+
+  > a:focus + ul.sub-menu,
+  &.sfHover > ul.sub-menu {
+    left: auto;
+    opacity: 1;
+  }
+}
+
+.genesis-responsive-menu {
+  display: none;
+  position: relative;
+
+  @media only screen and (min-width: 960px) {
+    display: block;
+    padding-top: 15px;
+  }
+
+  .genesis-nav-menu .menu-item:hover > .sub-menu {
+    display: none;
+  }
+}
+
+.menu-toggle,
+.sub-menu-toggle {
+  background-color: transparent;
+  border-width: 0;
+  color: $responsive-nav--toggle-color;
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+  visibility: visible;
+
+  @media only screen and (min-width: 960px) {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.menu-toggle:focus,
+.menu-toggle:hover,
+.sub-menu-toggle:focus,
+.sub-menu-toggle:hover {
+  background-color: transparent;
+  border-width: 0;
+  color: $responsive-nav--link-color;
+}
+
+.menu-toggle {
+  float: right;
+  line-height: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 15px 0;
+  position: relative;
+  z-index: 1000;
+
+  &.activated::before {
+    content: "\f335";
+  }
+}
+
+.site-header .menu-toggle::before {
+  float: left;
+  margin-right: 5px;
+  position: relative;
+  text-rendering: auto;
+  top: 1px;
+}
+
+.sub-menu-toggle {
+  float: right;
+  padding: 9px 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 100;
+
+  &::before {
+    display: inline-block;
+    text-rendering: auto;
+    transform: rotate(0);
+    transition: transform 0.25s ease-in-out;
+  }
+
+  &.activated::before {
+    transform: rotate(180deg);
+  }
+}
+
+.sub-menu .sub-menu-toggle {
+  padding: 12px 10px;
+}

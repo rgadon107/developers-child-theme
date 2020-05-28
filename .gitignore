@@ -1,0 +1,12 @@
+#Files
+db.php
+/developers/node_modules
+/genesis-sample/composer-lock.json
+/genesis-sample/package-lock.json
+
+#Directories
+/genesis
+/twentynineteen
+/upgrade
+/uploads/
+

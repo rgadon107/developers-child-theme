@@ -1,0 +1,41 @@
+/* ## Genesis eNews Extended
+--------------------------------------------- */
+
+.after-entry {
+  .enews {
+    text-align: center;
+    padding: 10px;
+
+    @media only screen and (min-width: 960px) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+
+  .enews-widget input {
+    text-align: center;
+  }
+}
+
+.sidebar .enews {
+  background-color: $enews--background-color;
+  padding: 30px;
+}
+
+.enews-widget {
+  input {
+    font-size: 16px;
+    @include rem( font-size, $enews--font-size );
+    margin-bottom: 10px;
+  }
+
+  input[type="submit"] {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+.enews form + p {
+  margin-top: 20px;
+}
+
