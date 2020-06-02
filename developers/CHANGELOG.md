@@ -1,3 +1,9 @@
+## 1.0.4 @DD.MM.2020
+
+- Added theme `/dev` directory, and moved, updated, and removed assets from theme root. 
+- Relocated `/assets/sass/*` and  `/assets/sass/style.scss` to `/dev/sass/*`. 
+- Removed `/css`, `/dist`, and `/languages` directories from `/assets` directory.
+
 ## 1.0.3 @17.Feb.2017
 
 Changed the `setup_child_theme()` callback priority number to 15 to ensure that Genesis' setups run first before the child theme.
