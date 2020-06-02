@@ -4,6 +4,10 @@ db.php
 /genesis-sample/composer-lock.json
 /genesis-sample/package-lock.json
 
+# Development files
+/developers/dev/node_modules
+/developers/assets/vendor
+
 #Directories
 /genesis
 /twentynineteen
