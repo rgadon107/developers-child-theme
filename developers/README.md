@@ -14,7 +14,6 @@ This theme includes the following features:
 - Configuration-based architecture
 - Modular CSS via Sass
 - Task runner uses gulp
-- Uses Bourbon and Neat
 
 ## Dependencies
 
@@ -26,7 +25,9 @@ This child theme requires the following dependencies:
 
 ## Installation
 
-The theme needs for you to install the node modules in order to run gulp.  To do that, navigate into the theme and in the command line (terminal or Bash), type: `npm install` and then enter.  
+The theme needs for you to install the node modules in order to run gulp.  To do that, from the command line, navigate into `/wp-content/themes/developers/dev`. From the terminal or Bash, type: `npm install` and then enter.  
+
+The `package.json` file at `/developers/dev/package.json` will call `npm` to load the theme's development dependencies and create a `package-lock.json` file. 
 
 ## Contributors
 
