@@ -41,11 +41,12 @@ li {
 }
 
 hr {
-  border: none;
+  border: 0;
   border-collapse: collapse;
-  border-top: 1px solid #eee;
+  border-top: 1px solid $horizontal-rule--border-color;
   clear: both;
-  margin: 30px 0;
+  color: $gray--lighter;
+  margin: 1.65em auto;
 }
 
 b,
@@ -61,11 +62,10 @@ i {
 }
 
 mark {
-  background: #ddd;
-  color: #333;
+  background: $mark--background;
+  color: $mark--color;
 }
 
 blockquote {
   margin: 30px;
 }
-
