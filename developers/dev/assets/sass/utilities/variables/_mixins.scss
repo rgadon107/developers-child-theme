@@ -1,0 +1,33 @@
+//
+// Mixins ( Minimum width breakpoints )
+//============================
+@mixin media( $resolution ) {
+  // min-width: 480px;
+  @if mobile == $resolution {
+	@media only screen and (min-width: $screen-size--smaller) {
+	  @content;
+	}
+  }
+
+ // min-width: 768px;
+  @if tablet == $resolution {
+	@media only screen and (min-width: $screen-size--small) {
+	  @content;
+	}
+  }
+
+  // min-width: 1168px;
+  @if desktop == $resolution {
+	@media only screen and (min-width: $screen-size--large) {
+	  @content;
+	}
+  }
+
+  // min-width: 1379px;
+  @if wide == $resolution {
+	@media only screen and (min-width: $screen-size--larger) {
+	  @content;
+	}
+  }
+}
+

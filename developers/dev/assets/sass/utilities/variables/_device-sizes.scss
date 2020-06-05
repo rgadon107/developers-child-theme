@@ -1,11 +1,11 @@
 //
 // Device Screen Sizes
 //==========================
-
 $screen-size--smallest: 320px;
-$screen-size--smaller: 480px;
-$screen-size--small: 860px;
-$screen-size--medium: 1023px;
-$screen-size--large: 1200px;
-$screen-size--larger: 1340px;
+$screen-size--smaller: 480px; // @mixin: @include media( mobile )
+$screen-size--small: 768px; // @mixin: @include media( tablet )
+$screen-size--medium: 960px;
+$screen-size--large: 1168px; // @mixin: @include media( desktop )
+$screen-size--larger: 1380px; // @mixin: @include media( wide )
 $screen-size--huge: 1600px;
+
