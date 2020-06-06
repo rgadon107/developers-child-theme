@@ -3,13 +3,14 @@
 //==============================
 
 .title-area {
-  float: left;
-  padding-bottom: 25px;
-  padding-top: 25px;
-
-  @media only screen and (max-width: 1023px) {
-    width: 100%;
-    text-align: center;
+  @include media( mobile ) {
+	width: 100%;
+	text-align: center;
+  }
+  @include media( desktop )	{
+	float: left;
+	padding-bottom: 25px;
+	padding-top: 25px;
   }
 }
 
