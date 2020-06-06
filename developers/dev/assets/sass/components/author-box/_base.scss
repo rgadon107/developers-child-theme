@@ -10,7 +10,7 @@
     margin-bottom: 0;
   }
 
-  @media only screen and (min-width: 960px) {
+  @include media( tablet-large ) {
     background-color: $author-box--background-color;
     padding: 30px;
     margin-bottom: 60px;
