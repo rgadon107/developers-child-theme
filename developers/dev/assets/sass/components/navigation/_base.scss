@@ -61,7 +61,7 @@
   a {
     color: $nav--link-color;
     display: block;
-    font-size: $nav--font-size;
+	@include rem( font-size, $nav--font-size );
     font-weight: 400;
     outline-offset: -1px;
     padding-bottom: 12px;
