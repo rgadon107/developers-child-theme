@@ -20,35 +20,50 @@
 
 .site-inner,
 .wrap {
-  margin: 0 auto;
-  max-width: $max-width-larger-screen;
-  
-   @include media( $breakpoint__screen-size--large ) {
-    max-width: $max-width-large-screen;
+  // min-width: 480px; max-width: 1167px
+  @include media( mobile ) {
+	max-width: $max-width--medium-screen; // 800px
   }
 
-   @include media( $breakpoint__screen-size--medium ) {
-    max-width: $max-width--medium-screen;
+  // min-width: 1168px; max-width: 1379px
+  @include media( desktop ) {
+	max-width: $max-width-large-screen; // 960px
+  }
+
+  // min-width: 1380px
+  @include media( wide ) {
+	margin: 0 auto;
+	max-width: $max-width-larger-screen; // 1140px
   }
 }
 
 .site-inner {
   clear: both;
   margin: 0 auto;
-  padding: 60px 30px 0;
 
-   @include media( $breakpoint__screen-size--small ) {
+  // min-width: 480px
+   @include media( mobile ) {
     padding: 5% 5% 0;
+  }
+  // min-width: 768px
+  @include media( tablet ) {
+	padding: 60px 30px 0;
   }
 }
 
- @include media( $breakpoint__screen-size--small ) {
-  .wrap {
-    padding-left: 5%;
-    padding-right: 5%;
+.wrap	{
+  // min-width: 480px
+  @include media( mobile ) {
+	padding: 0 5%;
+  }
+
+  // min-width: 768px
+  @include media( tablet ) {
+	padding: 0 0;
   }
 }
 
 .landing-page .site-inner {
   max-width: $max-width__landing-page;
 }
+
