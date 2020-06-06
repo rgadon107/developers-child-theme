@@ -7,7 +7,7 @@
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
   padding: 0 30px;
 
-  @media only screen and (min-width: 960px) {
+  @include media( tablet-large ) {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -18,3 +18,4 @@
     top: 32px;
   }
 }
+
