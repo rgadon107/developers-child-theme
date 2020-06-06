@@ -9,13 +9,13 @@
   width: 100%;
 
   > .menu-bold > a {
-    @media only screen and (min-width: 960px) {
+	@include media( tablet-large ) {
       font-weight: 700;
     }
   }
 
   > .menu-highlight > a {
-    @media only screen and (min-width: 960px) {
+	@include media( tablet-large ) {
       background-color: $nav-menu-highlight--background-color;
       border-radius: 3px;
       color: $nav-menu-highlight--link-color;
@@ -27,7 +27,7 @@
 
     &:focus,
     a:hover {
-      @media only screen and (min-width: 960px) {
+	  @include media( tablet-large ) {
         background-color: $nav-menu-highlight--link-focus-color;
       }
     }
@@ -38,7 +38,7 @@
     float: none;
     position: relative;
 
-    @media only screen and (min-width: 960px) {
+    @include media( tablet-large ) {
       display: inline-block;
     }
 
@@ -46,7 +46,7 @@
     &:hover {
       position: relative;
 
-      @media only screen and (min-width: 960px) {
+	  @include media( tablet-large ) {
         position: relative;
       }
     }
@@ -82,7 +82,7 @@
   .sub-menu a {
     width: 100%;
 
-    @media only screen and (min-width: 960px) {
+	@include media( tablet-large ) {
       width: 180px;
     }
   }
@@ -97,7 +97,7 @@
     position: static;
     z-index: 99;
 
-    @media only screen and (min-width: 960px) {
+	@include media( tablet-large ) {
       border-top: 1px solid $submenu--border-color;
       opacity: 0;
       padding-left: 0;
@@ -111,7 +111,7 @@
       position: relative;
       word-wrap: break-word;
 
-      @media only screen and (min-width: 960px) {
+	  @include media( tablet-large ) {
         border: 1px solid $submenu--link-border-color;
         border-top: 0;
         padding-bottom: 15px;
@@ -120,7 +120,7 @@
     }
 
     .sub-menu {
-      @media only screen and (min-width: 960px) {
+	  @include media( tablet-large ) {
         margin: -46px 0 0 179px;
       }
     }
