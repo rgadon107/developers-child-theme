@@ -16,6 +16,13 @@
 	}
   }
 
+  // min-width: 960px;
+  @if tablet-large == $resolution {
+	@media only screen and (min-width: $screen-size--medium) {
+	  @content;
+	}
+  }
+
   // min-width: 1168px;
   @if desktop == $resolution {
 	@media only screen and (min-width: $screen-size--large) {
