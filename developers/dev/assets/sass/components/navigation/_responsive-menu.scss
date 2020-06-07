@@ -18,7 +18,7 @@
   display: none;
   position: relative;
 
-  @media only screen and (min-width: 960px) {
+  @include media( tablet-large ) {
     display: block;
     padding-top: 15px;
   }
@@ -39,7 +39,7 @@
   text-align: center;
   visibility: visible;
 
-  @media only screen and (min-width: 960px) {
+  @include media( tablet-large ) {
     display: none;
     visibility: hidden;
   }
@@ -99,3 +99,4 @@
 .sub-menu .sub-menu-toggle {
   padding: 12px 10px;
 }
+
