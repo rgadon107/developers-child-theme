@@ -12,25 +12,30 @@
 
 .archive-pagination {
   li {
-    display: inline;
+	display: inline;
+
+	&.active a {
+	  background-color: $archive-pagination--hover-background-color;
+	  color: $archive-pagination--hover-color;
+	}
 
     a {
-      background-color: $archive-pagination--background-color;
-      color: $archive-pagination--color;
-      cursor: pointer;
-      display: inline-block;
-      @include rem(font-size, $archive-pagination--font-size);
-      font-weight: 600;
-      margin-bottom: 4px;
-      padding: 8px 12px;
-      text-decoration: none;
+	  background-color: $archive-pagination--background-color;
+	  color: $archive-pagination--color;
+	  cursor: pointer;
+	  display: inline-block;
+	  @include rem(font-size, $archive-pagination--font-size);
+	  font-weight: 600;
+	  margin-bottom: 4px;
+	  padding: 8px 12px;
+	  text-decoration: none;
+	}
 
-      &:hover,
-      &:focus,
-      .active & {
-        background-color: $archive-pagination--hover-background-color;
-        color: $archive-pagination--hover-color;
-      }
-    }
+	&:focus,
+	&:hover {
+	  background-color: $archive-pagination--hover-background-color;
+	  color: $archive-pagination--hover-color;
+	}
   }
 }
+
