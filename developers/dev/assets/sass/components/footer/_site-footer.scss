@@ -5,7 +5,7 @@
   background-color: $site-footer--background-color;
   border-top: 1px solid $site-footer--border-color;
   @include rem( font-size, $site-footer--font-size );
-  line-height: 1;
+  line-height: 1.5;
   padding: 30px;
   text-align: center;
 
@@ -13,3 +13,4 @@
     margin-bottom: 0;
   }
 }
+
