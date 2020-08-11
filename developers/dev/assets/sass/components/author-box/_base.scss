@@ -2,8 +2,8 @@
  --------------------------------------------------- */
 
 .author-box {
-  //background-color: $author-box--background-color;
-  //@include rem( font-size, $author-box--font-size );
+  background-color: $author-box--background-color;
+  @include rem( font-size, $author-box--font-size );
   margin-bottom: 40px;
 
   p:last-child {
