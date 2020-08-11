@@ -5,13 +5,10 @@
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
   padding: 20px 30px;
 
-  @media only screen and (min-width: 960px) {
+  @include media ( tablet-large ) {
     margin-bottom: 60px;
-    padding: 40px 60px;
   }
-
-
-
+  
   & .widget:last-of-type {
     margin-bottom: 0;
   }
