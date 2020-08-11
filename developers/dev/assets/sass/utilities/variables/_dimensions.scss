@@ -22,9 +22,9 @@ $content--width: $max-width;
 $content--width-larger-screen: 832px; // 65% (0.65) of $base-width.
 $content--width-large-screen: 620px;
 
-$primary-sidebar--width: 360px;
+//$primary-sidebar--width: 360px;
 //$primary-sidebar--width: $max-width - $content--width - $gutter;
-//$primary-sidebar--width: $base--width * 0.28125 + px;
+$primary-sidebar--width: $base--width * 0.30 + px;
 $primary-sidebar--width-larger-screen: 300px;
 $secondary-sidebar--width: 180px;
 
