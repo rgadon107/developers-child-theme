@@ -20,20 +20,25 @@
 
 .site-inner,
 .wrap {
-  // min-width: 480px; max-width: 1167px
+  // min-width: 480px; max-width: 767px
   @include media( mobile ) {
 	max-width: $max-width--medium-screen; // 800px
   }
 
+  // min-width: 768px; max-width: 1167px
+  @include media( tablet ) {
+	max-width: $max-width--large-screen; // 960 px
+  }
+
   // min-width: 1168px; max-width: 1379px
   @include media( desktop ) {
-	max-width: $max-width-large-screen; // 960px
+	max-width: $max-width--larger-screen; // 1140px
   }
 
   // min-width: 1380px
   @include media( wide ) {
 	margin: 0 auto;
-	max-width: $max-width-larger-screen; // 1140px
+	max-width: $max-width--wide-screen; // 1260px
   }
 }
 
