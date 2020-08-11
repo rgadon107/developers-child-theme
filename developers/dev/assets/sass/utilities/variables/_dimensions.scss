@@ -2,15 +2,16 @@
 // Dimensions Variables
 //=======================
 
-$base--width: 1280;
+$base--width: 1280px;
 $gutter: 40px;
 
 //
 // Max Widths
 //==========================
 $max-width: $base--width + px;
-$max-width-larger-screen: 1140px;
-$max-width-large-screen: 960px;
+$max-width--wide-screen: 1260px;
+$max-width--larger-screen: 1140px;
+$max-width--large-screen: 960px;
 $max-width--medium-screen: 800px;
 $max-width__landing-page: 800px;
 
