@@ -13,7 +13,7 @@
     margin-right: auto;
 
     @include media ( tablet-large ) {
-      max-width: $max-width-larger-screen;
+      max-width: $max-width--larger-screen;
     }
   }
 
