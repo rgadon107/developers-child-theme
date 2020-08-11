@@ -15,7 +15,9 @@
   }
 
   .admin-bar & {
-    top: 32px;
+	@include media( tablet-large ) {
+	  top: 32px;
+	}
   }
 }
 
