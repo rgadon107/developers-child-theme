@@ -18,16 +18,50 @@ a {
   text-decoration: underline;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 
+  @media print {
+	text-decoration: underline;
+  }
+
   &:hover,
   &:focus {
     color: $link--hover-color;
     text-decoration: none;
+  }
+
+  &:visited {
+	@media print {
+	  text-decoration: underline;
+	}
+  }
+
+  &[href]::after {
+	@media print {
+	  content: " (" attr(href) ")";
+	}
+  }
+
+  &[href^="javascript:"]::after,
+  &[href^="#"]::after {
+	@media print {
+	  content: "";
+	}
+  }
+}
+
+abbr[title]::after {
+  @media print {
+	content: " (" attr(title) ")";
   }
 }
 
 p {
   margin: 0 0 30px;
   padding: 0;
+
+  @media print {
+	orphans: 3;
+	widows: 3;
+  }
 }
 
 ol,
@@ -69,3 +103,11 @@ mark {
 blockquote {
   margin: 30px;
 }
+
+pre {
+  @media print {
+	border: 1px solid $gray--dark;
+	page-break-inside: avoid;
+  }
+}
+

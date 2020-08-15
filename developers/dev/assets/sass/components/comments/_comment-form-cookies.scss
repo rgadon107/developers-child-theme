@@ -9,3 +9,9 @@
   }
 }
 
+.comment-form {
+  @media print {
+	display: none !important;
+  }
+}
+

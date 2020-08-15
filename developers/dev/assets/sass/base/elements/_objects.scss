@@ -13,6 +13,12 @@ video,
 img {
   height: auto;
   vertical-align: top;
+
+  @media print {
+	page-break-inside: avoid;
+	page-break-after: avoid;
+	max-width: 100% !important;
+  }
 }
 
 figure {

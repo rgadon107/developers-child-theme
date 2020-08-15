@@ -10,3 +10,10 @@
   }
 }
 
+.edit-link,
+.entry-comments-link {
+  @media print {
+	display: none !important;
+  }
+}
+

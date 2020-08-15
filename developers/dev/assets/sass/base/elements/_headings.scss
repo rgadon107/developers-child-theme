@@ -11,6 +11,13 @@ h6 {
   font-weight: 400;
   line-height: $headings--line-height;
   margin: 0 0 20px;
+
+  @media print {
+	orphans: 3;
+	page-break-after: avoid;
+	page-break-inside: avoid;
+	widows: 3;
+  }
 }
 
 h1 {

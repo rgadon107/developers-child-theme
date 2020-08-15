@@ -11,6 +11,10 @@
     width: $primary-sidebar--width;
   }
 
+  @media print {
+	display: none !important;
+  }
+
   &-content & {
     @include media( tablet-large ) {
       float: left;

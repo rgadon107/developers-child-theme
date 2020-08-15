@@ -2,6 +2,12 @@
 // Comment Respond
 //========================
 
+.comment-reply-title {
+  @media print {
+	display: none !important;
+  }
+}
+
 .comment-respond {
   label {
     display: block;

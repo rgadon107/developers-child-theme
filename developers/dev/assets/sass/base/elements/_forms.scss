@@ -11,6 +11,10 @@ textarea {
   font-weight: 400;
   padding: 15px;
   width: 100%;
+
+  @media print {
+	display: none !important;
+  }
 }
 
 input:focus,
@@ -87,6 +91,10 @@ input[type="submit"]:hover,
 
 .button {
   display: inline-block;
+
+  @media print {
+	display: none !important;
+  }
 }
 
 a.button.small,

@@ -10,4 +10,10 @@ blockquote {
     position: relative;
     top: -10px;
   }
+
+  @media print {
+	border: 1px solid $gray--dark;
+	page-break-inside: avoid;
+  }
 }
+

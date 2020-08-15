@@ -7,4 +7,9 @@
   border-bottom: 1px solid $breadcrumbs--border-color;
   margin-bottom: 40px;
   padding-bottom: 10px;
+
+  @media print {
+	display: none !important;
+  }
 }
+

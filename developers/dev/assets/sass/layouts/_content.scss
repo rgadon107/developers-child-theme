@@ -7,6 +7,13 @@
     width: $content--width-larger-screen;
   }
 
+  &,
+  &-sidebar {
+	@media print {
+	  width: 100%;
+	}
+  }
+
   .sticky {
     background-color: $entry-content-sticky--background-color;
     padding: 30px;

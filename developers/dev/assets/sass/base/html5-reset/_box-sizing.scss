@@ -9,5 +9,12 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+
+  @media print {
+	background: transparent !important;
+	box-shadow: none !important;
+	color: #333 !important;
+	text-shadow: none !important;
+  }
 }
 
