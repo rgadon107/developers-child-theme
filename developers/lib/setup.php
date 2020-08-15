@@ -10,6 +10,8 @@
  */
 namespace spiralWebDB\Developers;
 
+use function spiralWebDB\Developers\Structure\unregister_menu_callbacks;
+
 add_action( 'genesis_setup', __NAMESPACE__ . '\setup_child_theme', 15 );
 /**
  * Setup child theme.
