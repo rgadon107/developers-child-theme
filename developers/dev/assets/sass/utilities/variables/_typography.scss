@@ -1,9 +1,17 @@
+// Base Typography
+// =====================================================
+
+// Reset the default value of $rem-baseline in `/dev/node_modules/rem-sass/_rem.scss`.
+// The reset preserves the calculation of rem in the stylesheet.
+$rem-baseline: 10px;
+// Set $rem-fallback to 'true' to allow rem to pixel conversion when necessary.
+$rem-fallback: true;
+$html--font-size: 62.5%;
+
 // Common Fonts
 $font-family--source-sans-pro: 'Source Sans Pro', sans-serif;
 
-// Base Typography
-$html--font-size: 62.5%;
-
+// Base Font Family & Font Sizes
 $base--font-family: $font-family--source-sans-pro;
 $base--font-size: 20px;
 $base--font-size--small-screen: 18px;
@@ -30,7 +38,8 @@ $button--font-size: 16px;
 // Navigation
 //===========
 $nav--font-size: 15px;
-$submenu--font-size: 14px;
+$submenu-base--font-size: 14px;
+$submenu-tablet-large--font-size: 16px;
 $primary-nav--font-size: 14px;
 $archive-pagination--font-size: 16px;
 
