@@ -37,7 +37,8 @@ $button--font-size: 16px;
 //
 // Navigation
 //===========
-$nav--font-size: 15px;
+$nav-base--font-size: 15px;
+$nav-tablet--font-size: $base--font-size;
 $submenu-base--font-size: 14px;
 $submenu-tablet-large--font-size: 16px;
 $primary-nav--font-size: 14px;
