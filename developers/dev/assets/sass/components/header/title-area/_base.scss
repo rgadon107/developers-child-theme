@@ -3,15 +3,9 @@
 //==============================
 
 .title-area {
-  @include media( mobile ) {
-	width: 100%;
-	text-align: center;
-  }
-  @include media( desktop )	{
 	float: left;
 	padding-bottom: 25px;
 	padding-top: 25px;
-  }
 
   @media print {
 	text-align: center;
