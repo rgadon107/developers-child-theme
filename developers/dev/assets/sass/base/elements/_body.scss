@@ -15,7 +15,7 @@ body {
   overflow-x: hidden;
 
    @include media( mobile ) {
-    font-size: $base--font-size--small-screen;
+    @include rem( font-size, $base--font-size--small-screen );
   }
 
   @include media( tablet )	{
