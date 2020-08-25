@@ -4,7 +4,6 @@
 
 .genesis-nav-menu {
   clear: both;
-  @include rem( font-size, $nav--font-size );
   line-height: 1;
   width: 100%;
 
@@ -61,12 +60,16 @@
   a {
     color: $nav--link-color;
     display: block;
-	@include rem( font-size, $nav--font-size );
+	@include rem( font-size, $nav-base--font-size );
     font-weight: 400;
     outline-offset: -1px;
     padding-bottom: 12px;
-    padding-top: 12px;
+	padding-top: 12px;
     text-decoration: none;
+
+	@include media( tablet ) {
+	  @include rem( font-size, $nav-tablet--font-size );
+	}
   }
 
   a:focus,
@@ -107,15 +110,16 @@
 
     a {
       background-color: $submenu--link-background-color;
-      @include rem( font-size, $submenu--font-size );
+      @include rem( font-size, $submenu-base--font-size );
       position: relative;
       word-wrap: break-word;
+	  padding-left: 10px;
 
 	  @include media( tablet-large ) {
         border: 1px solid $submenu--link-border-color;
+		@include rem( font-size, $submenu-tablet-large--font-size );
         border-top: 0;
-        padding-bottom: 15px;
-        padding-top: 15px;
+		padding: 15px 0 15px 0;
       }
     }
 
